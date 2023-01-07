@@ -1,7 +1,7 @@
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import React, { memo } from 'react'
 
-type Values = { countryName: string; countryCode: string }
+type Values = { countryName: string; countryCode: StaticImageData }
 
 const CardCountry = memo(({ countryName, countryCode }: Values) => {
   return (
