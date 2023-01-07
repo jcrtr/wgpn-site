@@ -10,7 +10,7 @@ const iconInfinity = <Lottie animationData={iInfinity} loop={true} />
 const iconHelp = <Lottie animationData={iHelp} loop={true} />
 const iconIP = <Lottie animationData={iIP} loop={true} />
 
-const CardInfo = memo(({ title }) => {
+const CardInfo = memo(() => {
   return (
     <div className="py-4 grid lg:grid-cols-4 gap-6 grid-cols-2">
       <div

@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 
-type Values = { days: number; price: number }
+type Values = { days: number; price: number; color: string; title: string }
 
 const Item = ({ days, price, color, title }: Values) => {
   return (

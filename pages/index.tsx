@@ -68,7 +68,7 @@ export default function Home() {
           <div className="container mx-auto flex flex-col items-center justify-center h-full">
             <div className="w-full flex justify-between">
               <div className="w-96 flex flex-row items-center">
-                <Image src={logo} width={60} />
+                <Image src={logo} width={60} alt="logo" />
                 <div className={myFont.className}>
                   <p className="ml-2 text-white font-bold">GET VPN</p>
                 </div>

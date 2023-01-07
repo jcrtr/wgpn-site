@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import React, { memo } from 'react'
 
-const CardCountry = memo(({ countryName, countryCode, notRegion: False }) => {
+type Values = { countryName: string; countryCode: string }
+
+const CardCountry = memo(({ countryName, countryCode }: Values) => {
   return (
     <div
       className="rounded-xl backdrop-blur-sm bg-white/20 p-4 m-4 flex flex-col items-center justify-center
