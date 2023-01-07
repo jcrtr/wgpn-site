@@ -1,7 +1,6 @@
-import Image, { StaticImageData } from 'next/image'
 import React, { memo } from 'react'
 
-type Values = { countryName: string; countryCode: StaticImageData }
+type Values = { countryName: string; countryCode: string }
 
 const CardCountry = memo(({ countryName, countryCode }: Values) => {
   return (
@@ -9,7 +8,7 @@ const CardCountry = memo(({ countryName, countryCode }: Values) => {
       className="rounded-xl backdrop-blur-sm bg-white/20 p-4 m-4 flex flex-col items-center justify-center
 ">
       <div className="w-16 h16">
-        <Image
+        <img
           src={countryCode}
           width={60}
           height={60}

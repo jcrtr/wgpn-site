@@ -9,17 +9,12 @@ import { FaAndroid, FaApple, FaTelegram, FaWindows } from 'react-icons/fa'
 
 import { SiUbuntu } from 'react-icons/si'
 
-import DE from '../public/countries/germany.png'
-import NL from '../public/countries/netherlands.png'
-import UK from '../public/countries/united-states.png'
-import US from '../public/countries/united-kingdom.png'
-import { AiFillMacCommand } from 'react-icons/ai'
 import CardPrice from '../components/CardPrice'
-import Image from 'next/image'
 import CardServices from '../components/CardServices'
 import CardPayments from '../components/CardPayments'
 
 import { Rubik } from '@next/font/google'
+import { AiFillMacCommand } from 'react-icons/ai'
 
 const myFont = localFont({ src: '../public/oneday.otf' })
 const rubikFont = Rubik()
@@ -66,7 +61,7 @@ export default function Home() {
           <div className="container mx-auto flex flex-col items-center justify-center h-full">
             <div className="w-full flex justify-between">
               <div className="w-96 flex flex-row items-center">
-                <Image src={'/logo.png'} width={60} alt="logo" />
+                <img src={'/logo.png'} width={60} alt="logo" />
                 <div className={myFont.className}>
                   <p className="ml-2 text-white font-bold">GET VPN</p>
                 </div>
@@ -154,10 +149,22 @@ export default function Home() {
             <CardPrice />
             <p className="mt-8 text-white font-bold text-2xl">Регионы</p>
             <div className="py-4 grid lg:grid-cols-4 gap-6 grid-cols-2">
-              <CardCountry countryName="Германия" countryCode={DE} />
-              <CardCountry countryName="Нидерланды" countryCode={NL} />
-              <CardCountry countryName="Великобритания" countryCode={US} />
-              <CardCountry countryName="США" countryCode={UK} />
+              <CardCountry
+                countryName="Германия"
+                countryCode={'/countries/germany.png'}
+              />
+              <CardCountry
+                countryName="Нидерланды"
+                countryCode={'/countries/netherlands.png'}
+              />
+              <CardCountry
+                countryName="Великобритания"
+                countryCode={'/countries/united-kingdom.png'}
+              />
+              <CardCountry
+                countryName="США"
+                countryCode={'/countries/united-states.png'}
+              />
             </div>
             <p className="mt-8 text-white font-bold text-2xl">
               Доступ к сервисам
