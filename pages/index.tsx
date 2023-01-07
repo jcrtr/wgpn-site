@@ -23,7 +23,6 @@ import CardPayments from '../components/CardPayments'
 import { Rubik } from '@next/font/google'
 
 const myFont = localFont({ src: '../public/oneday.otf' })
-const myFontRU = localFont({ src: '../public/Wastebased.otf' })
 const rubikFont = Rubik()
 
 const iconCup = <Lottie animationData={iCup} loop={true} />
