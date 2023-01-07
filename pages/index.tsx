@@ -47,21 +47,21 @@ export default function Home() {
           content={SEO.description}
           key="description"
         />
-        <meta property="og:image" content={`/logo.png`} />
+        <meta property="og:image" content={`/logo.PNG`} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="get-vpn.ru" />
         <meta property="twitter:url" content={`https://get-vpn.ru`} />
         <meta name="twitter:title" content={SEO.title} />
         <meta name="twitter:description" content={SEO.description} />
-        <meta name="twitter:image" content={`/logo.png`} />
+        <meta name="twitter:image" content={`/logo.PNG`} />
       </Head>
       <main className={rubikFont.className}>
         <div className="bg-hero bg-no-repeat bg-center bg-fixed bg-cover py-8 px-4">
           <div className="container mx-auto flex flex-col items-center justify-center h-full">
             <div className="w-full flex justify-between">
               <div className="w-96 flex flex-row items-center">
-                <img src={'/logo.png'} width={60} alt="logo" />
+                <img src={'/logo.PNG'} width={60} alt="logo" />
                 <div className={myFont.className}>
                   <p className="ml-2 text-white font-bold">GET VPN</p>
                 </div>
