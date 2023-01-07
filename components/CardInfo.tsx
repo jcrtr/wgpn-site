@@ -12,9 +12,9 @@ const iconIP = <Lottie animationData={iIP} loop={true} />
 
 const CardInfo = memo(() => {
   return (
-    <div className="py-4 grid lg:grid-cols-4 gap-6 grid-cols-2">
+    <div className="py-4 grid lg:grid-cols-4 lg:gap-6 gap-4 grid-cols-2">
       <div
-        className="rounded-xl backdrop-blur-sm bg-white/20 p-4 m-4 flex flex-col items-center justify-center
+        className="rounded-xl backdrop-blur-sm bg-white/20 p-4 lg:m-4 flex flex-col items-center justify-center
     ">
         <div className="h-14 w-20 -mt-4">{iconSpeed}</div>
         <div className="h-12 mt-4">
@@ -24,7 +24,7 @@ const CardInfo = memo(() => {
         </div>
       </div>
       <div
-        className="rounded-xl backdrop-blur-sm bg-white/20 p-4 m-4 flex flex-col items-center justify-center
+        className="rounded-xl backdrop-blur-sm bg-white/20 p-4 lg:m-4 flex flex-col items-center justify-center
     ">
         <div className="h-14 w-24 -mt-4">{iconInfinity}</div>
         <div className="h-12 mt-4">
@@ -34,7 +34,7 @@ const CardInfo = memo(() => {
         </div>
       </div>
       <div
-        className="rounded-xl backdrop-blur-sm bg-white/20 p-4 m-4 flex flex-col items-center justify-center
+        className="rounded-xl backdrop-blur-sm bg-white/20 p-4 lg:m-4 flex flex-col items-center justify-center
     ">
         <div className="h-14 w-24 -mt-6">{iconHelp}</div>
         <div className="h-12 mt-6">
@@ -44,7 +44,7 @@ const CardInfo = memo(() => {
         </div>
       </div>
       <div
-        className="rounded-xl backdrop-blur-sm bg-white/20 p-4 m-4 flex flex-col items-center justify-center
+        className="rounded-xl backdrop-blur-sm bg-white/20 p-4 lg:m-4 flex flex-col items-center justify-center
     ">
         <div className="h-14 w-16">{iconIP}</div>
         <div className="h-12 mt-2">

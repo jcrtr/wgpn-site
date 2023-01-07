@@ -10,7 +10,7 @@ import { SiCanva } from 'react-icons/si'
 const CardServices = memo(() => {
   return (
     <>
-      <div className="w-full flex justify-center py-8 gap-6 text-gray-200 text-4xl">
+      <div className="grid lg:grid-cols-5 grid-cols-3 py-8 gap-6 text-gray-200 text-4xl">
         <div className="rounded-full h-16 w-16 backdrop-blur-sm bg-white/20 flex items-center justify-center">
           <FaFacebook />
         </div>

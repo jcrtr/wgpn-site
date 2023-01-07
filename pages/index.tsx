@@ -37,7 +37,7 @@ export default function Home() {
         <meta name="description" content={SEO.description} />
         <link rel="icon" href={`/logo.png`} />
         <meta name="application-name" content="GET VPN" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#000000" />
 
         <meta property="og:url" content={`https://get-vpn.ru`} key="url" />
         <meta property="og:type" content="website" />
@@ -60,7 +60,7 @@ export default function Home() {
         <div className="bg-hero bg-no-repeat bg-center bg-fixed bg-cover py-8 px-4">
           <div className="container mx-auto flex flex-col items-center justify-center h-full">
             <div className="w-full flex justify-between">
-              <div className="w-96 flex flex-row items-center">
+              <div className="w-80 flex flex-row items-center">
                 <img src={'/logo.PNG'} width={60} alt="logo" />
                 <div className={myFont.className}>
                   <p className="ml-2 text-white font-bold">GET VPN</p>
@@ -75,7 +75,7 @@ export default function Home() {
               {/*     <p className="font-semibold text-green-400">site</p> */}
               {/*   </div> */}
               {/* </div> */}
-              <div className="lg:w-[200px] w-full shadow-lg rounded-xl px-2 flex flex-wrap items-center ">
+              <div className="lg:w-[200px] w-full flex flex-wrap items-center ">
                 <div className="w-16 h-16">{iconCup}</div>
                 <div className="felx flex-col items-center">
                   <p className="text-gray-100 text-xs">my-expert.ru</p>
@@ -83,7 +83,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center py-12">
+            <div className="flex justify-center py-12 mt-8">
               <div className="flex flex-col justify-center text-center">
                 <div className={myFont.className}>
                   <h1 className="text-7xl font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
@@ -148,7 +148,7 @@ export default function Home() {
             <p className="mt-8 text-white font-bold text-2xl">Тарифы</p>
             <CardPrice />
             <p className="mt-8 text-white font-bold text-2xl">Регионы</p>
-            <div className="py-4 grid lg:grid-cols-4 gap-6 grid-cols-2">
+            <div className="py-4 grid lg:grid-cols-4 lg:gap-6 gap-3 grid-cols-2">
               <CardCountry
                 countryName="Германия"
                 countryCode={'/countries/germany.png'}
