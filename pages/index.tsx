@@ -13,7 +13,6 @@ import DE from '../public/countries/germany.png'
 import NL from '../public/countries/netherlands.png'
 import UK from '../public/countries/united-states.png'
 import US from '../public/countries/united-kingdom.png'
-import logo from '../public/logo.png'
 import { AiFillMacCommand } from 'react-icons/ai'
 import CardPrice from '../components/CardPrice'
 import Image from 'next/image'
@@ -67,7 +66,7 @@ export default function Home() {
           <div className="container mx-auto flex flex-col items-center justify-center h-full">
             <div className="w-full flex justify-between">
               <div className="w-96 flex flex-row items-center">
-                <Image src={logo} width={60} alt="logo" />
+                <Image src={'/logo.png'} width={60} alt="logo" />
                 <div className={myFont.className}>
                   <p className="ml-2 text-white font-bold">GET VPN</p>
                 </div>
