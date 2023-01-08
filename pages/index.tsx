@@ -4,6 +4,7 @@ import CardInfo from '../components/CardInfo'
 
 import Lottie from 'lottie-react'
 import iCup from '../public/icons/cup.json'
+import iClick from '../public/icons/click.json'
 import CardCountry from '../components/CardCountry'
 import { FaAndroid, FaApple, FaTelegram, FaWindows } from 'react-icons/fa'
 
@@ -20,6 +21,7 @@ const myFont = localFont({ src: '../public/oneday.otf' })
 const rubikFont = Rubik()
 
 const iconCup = <Lottie animationData={iCup} loop={true} />
+const iconClick = <Lottie animationData={iClick} loop={true} />
 
 const SEO = {
   title: 'Скачать лучший VPN для iPhone и Android (бесплатно) на русском',
@@ -35,7 +37,7 @@ export default function Home() {
         <meta charSet="utf-8" />
         <title>{SEO.title}</title>
         <meta name="description" content={SEO.description} />
-        <link rel="icon" href={`/logo.png`} />
+        <link rel="icon" href={`/logo.PNG`} />
         <meta name="application-name" content="GET VPN" />
         <meta name="theme-color" content="#000000" />
 
@@ -109,12 +111,14 @@ export default function Home() {
                   <p>Установить GET VPN</p>
                 </button>
               </a>
-              <div className="py-4">
+              <div className="flex py-4 items-center">
+                <div className="h-12 w-12">{iconClick}</div>
                 <a
                   href="https://t.me/wg_vpn_bot?start=site"
-                  className="text-sm text-lime-400 font-bold">
+                  className="text-sm text-lime-400 font-bold underline decoration-lime-500">
                   активировать 3 дня бесплатно
                 </a>
+                <div className="w-12">{iconClick}</div>
               </div>
             </div>
 
@@ -174,17 +178,15 @@ export default function Home() {
               Удобные способы оплаты
             </p>
             <CardPayments />
-            <div className="w-full flex justify-between text-white py-8">
-              <div className="flex justify-start">
-                <p>
-                  Связаться с нами:
-                  <a href="https://t.me/get_vpn_help" className="ml-2">
-                    @get_vpn_help
-                  </a>
-                </p>
-              </div>
-              <div className="ml-2">
-                <p>copyright © 2023</p>
+            <div className="w-full flex lg:flex-row flex-col lg:justify-between text-white py-8">
+              <p className="lg:text-right text-center">
+                Связаться с нами:
+                <a href="https://t.me/get_vpn_help" className="ml-2">
+                  @get_vpn_help
+                </a>
+              </p>
+              <div className="lg:mt-0 mt-4 lg:text-right text-center">
+                <p>Copyright © 2023</p>
               </div>
             </div>
           </div>
